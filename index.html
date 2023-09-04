@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/9380560a3e.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    <title>JS Counter Project</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        text-align: center;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 70vh;
+    }
+    
+    h1 {
+        font-size: 50px;
+    }
+    
+    h2 {
+        font-size: 100px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    button {
+        width: 80px;
+        height: 50px;
+        border-radius: 5px;
+        border: none;
+        margin: 30px 50px;
+        color: white;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 1rem;
+    }
+    
+    .start {
+        background-color: green;
+    }
+    
+    .stop {
+        background-color: red;
+    }
+    
+    .restart {
+        background-color: orange;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Counter</h1>
+    </header>
+    <main class="main">
+        <div class="num">
+            <h2 id="number">0</h2>
+        </div>
+        <div class="buttons">
+            <button class="start" id="start">Start</button>
+            <button class="stop" id="stop">Stop</button>
+            <button class="restart" id="reset">Reset</button>
+        </div>
+    </main>
+</body>
+
+</html>
